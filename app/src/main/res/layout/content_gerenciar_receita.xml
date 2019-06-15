@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFA"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.TrabalhoAS2019.GerenciarReceitas"
+    tools:showIn="@layout/activity_gerenciar_receita">
+
+    <Button
+        android:id="@+id/excluirfonte"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/ic_lixo_foreground"
+        android:text="@string/lixo"
+        app:layout_constraintEnd_toStartOf="@+id/editarfonte"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/editarfonte"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@mipmap/ic_editar_foreground"
+        android:text="@string/editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/adicionarfonte"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginLeft="332dp"
+        android:layout_marginBottom="28dp"
+        android:background="@mipmap/ic_adicionar_foreground"
+        android:text="@string/adicionardestino"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="598dp"
+        android:text="@string/gerenciarreceita"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <ExpandableListView
+        android:id="@+id/listarfontes"
+        android:layout_width="395dp"
+        android:layout_height="321dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:listSelector="#59C065"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/excluirfonte" />
+
+    <SearchView
+        android:id="@+id/buscarfontes"
+        android:layout_width="226dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/excluirfonte"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btncalendario"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="305dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="28dp"
+        android:background="@mipmap/ic_calendario_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/editarfonte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
